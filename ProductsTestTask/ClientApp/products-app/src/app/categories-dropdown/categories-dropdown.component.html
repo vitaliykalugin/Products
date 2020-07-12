@@ -1,0 +1,7 @@
+<ng-select  [multiple]="true"
+            [items]="categoriesNames"
+            (add)="addSelectedCategory($event)"
+            (remove)="removeCategory($event)"
+            (clear)="clearSelectedCategories($event)"
+            placeholder="Categories">
+</ng-select>

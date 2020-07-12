@@ -1,0 +1,22 @@
+<div class="products-table">
+    <h2>Products</h2>
+    <app-add-product></app-add-product>
+    <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Categories</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let product of products">
+        <td>
+            {{ product.name }}
+        </td>
+        <td>
+            {{ getProductCategoriesString(product) }}
+        </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
